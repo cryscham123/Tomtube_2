@@ -18,6 +18,9 @@
     transition: top 0.2s ease-in-out;
   }
   &__info {
+    display: grid;
+    grid-template-rows: repeat(3, min-content);
+    row-gap: 0.4em;
     &:before {
       content: "";
       display: block;
@@ -26,12 +29,11 @@
       background: rgba(0, 0, 0, 0.5);
     }
     &__title {
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: $black;
-      margin-top: 0.4em;
     }
     &__channel {
-      font-size: 1rem;
+      font-size: 0.8rem;
       color: rgba(0, 0, 0, 0.5);
     }
   }
