@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Tomtube_2/static/css/main.dbcc6952.chunk.css",
+    "main.js": "/Tomtube_2/static/js/main.33bc5260.chunk.js",
+    "main.js.map": "/Tomtube_2/static/js/main.33bc5260.chunk.js.map",
+    "runtime-main.js": "/Tomtube_2/static/js/runtime-main.1ee04c6a.js",
+    "runtime-main.js.map": "/Tomtube_2/static/js/runtime-main.1ee04c6a.js.map",
+    "static/js/2.eaea1aa2.chunk.js": "/Tomtube_2/static/js/2.eaea1aa2.chunk.js",
+    "static/js/2.eaea1aa2.chunk.js.map": "/Tomtube_2/static/js/2.eaea1aa2.chunk.js.map",
+    "index.html": "/Tomtube_2/index.html",
+    "static/css/main.dbcc6952.chunk.css.map": "/Tomtube_2/static/css/main.dbcc6952.chunk.css.map",
+    "static/js/2.eaea1aa2.chunk.js.LICENSE.txt": "/Tomtube_2/static/js/2.eaea1aa2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1ee04c6a.js",
+    "static/js/2.eaea1aa2.chunk.js",
+    "static/css/main.dbcc6952.chunk.css",
+    "static/js/main.33bc5260.chunk.js"
+  ]
+}
