@@ -1,0 +1,44 @@
+@import "../_extends";
+@import "../_variables";
+@import "../_mixins";
+
+.footer {
+  border-top: 2px solid $black;
+  background-color: black;
+  height: 150px;
+  color: rgb(155, 155, 155);
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+  &__creator {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    &:before {
+      content: "Creators";
+    }
+    &__name {
+    }
+  }
+  &__contacts {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    &:before {
+      content: "Contacts";
+    }
+    &__content {
+      display: flex;
+    }
+  }
+  &__policy {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    &:before {
+      content: "Policy";
+    }
+    &__content {
+      display: flex;
+    }
+  }
+}

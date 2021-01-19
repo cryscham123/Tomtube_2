@@ -1,0 +1,33 @@
+@import "../_extends";
+@import "../_variables";
+@import "../_mixins";
+
+.items {
+  @extend %page;
+  display: grid;
+  justify-self: center;
+  grid-template-rows: min-content;
+  grid-auto-rows: 1fr;
+  gap: $gap;
+  @include responsible("small") {
+    grid-template-columns: min-content;
+  }
+  @include responsible("medium") {
+    grid-template-columns: repeat(2, min-content);
+  }
+  @include responsible("large") {
+    grid-template-columns: repeat(3, min-content);
+  }
+  &__info {
+    color: $white;
+    @include responsible("small") {
+      grid-column: span 1;
+    }
+    @include responsible("medium") {
+      grid-column: span 2;
+    }
+    @include responsible("large") {
+      grid-column: span 3;
+    }
+  }
+}

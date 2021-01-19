@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "./components/_variables";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: $main;
+}
+.grid {
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  row-gap: $gap;
+  height: 100vh;
+}

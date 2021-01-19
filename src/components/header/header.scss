@@ -1,0 +1,47 @@
+@import "../_extends";
+@import "../_variables";
+@import "../_mixins";
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-column-gap: $gap;
+  justify-content: center;
+  align-items: center;
+  padding: $gap;
+  background-color: $sub;
+  border-bottom: 1px solid $black;
+  &__title {
+    @extend %Link;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-column-gap: 0.4em;
+    align-items: center;
+    &__icon {
+      font-size: 1.5rem;
+      color: $main;
+    }
+    &__title {
+      font-size: 1.5rem;
+      color: $white;
+      transition: color 0.2s ease-in-out;
+    }
+    &:hover &__title {
+      color: $main;
+    }
+  }
+  &__search {
+    @extend %button;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    color: $white;
+    transition: color 0.2s ease-in-out;
+    &:hover {
+      color: $main;
+    }
+  }
+}
